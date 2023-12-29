@@ -1,0 +1,29 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+</head>
+<body>
+
+<script>
+    // 구구단 출력 함수
+    function printMultiplicationTable(dan) {
+        document.write('<h2>' + dan + '단</h2>');
+        for (var i = 1; i <= 9; i++) {
+            document.write(dan + ' * ' + i + ' = ' + (dan * i) + '<br>');
+        }
+    }
+
+    // 2단부터 9단까지 출력
+    for (var dan = 2; dan <= 9; dan++) {
+        printMultiplicationTable(dan);
+        document.write('<hr>'); // 단락 나누기
+    }
+</script>
+
+</body>
+</html>
